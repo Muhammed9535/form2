@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+p {
+    color: white;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./bg-intro-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.content {
+    height: 70vh;
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 200px 0 200px;
+
+}
+
+.left_col {
+    flex: 30%;
+    height: 100%;
+    padding-left: 90px;
+}
+
+.left_col h1 {
+    margin-top: 150px;
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+}
+
+.left_col p {
+    margin-top: 15px;
+    color: white;
+    font-size: 12px;
+}
+
+.right_col {
+    flex: 50%;
+    height: 100%;
+    flex: 1;
+
+}
+
+.text {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    text-align: center;
+    width: 500px;
+    font-size: 12px;
+    padding: 15px 0 15px 0;
+}
+
+.form {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 30px 0 15px 25px;
+}
+
+.form-control {
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    /* margin-bottom: 10px; */
+}
+
+.form-control input {
+    width: 450px;
+    padding: 15px 0 15px 15px;
+    background-color: none;
+    border-radius: 5px;
+    /* display: block; */
+    border: 3px solid hsl(246, 25%, 77%);
+
+}
+
+.form-control.success input {
+    border-color: hsl(246, 25%, 77%);
+
+}
+
+.form-control.error input {
+    border-color: red;
+}
+
+.form-control img {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    visibility: hidden;
+}
+
+.form-control small {
+    position: relative;
+    left: 250px;
+    bottom: 0;
+    visibility: hidden;
+}
+
+.form-control.error img {
+    visibility: visible;
+
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: red;
+}
+
+.form .btn {
+    width: 450px;
+    padding: 15px 15px 15px 0;
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+h6 span {
+    color: red;
+}
+
+@media (max-width: 900px) {
+    .container {
+        background-color: hsl(0, 100%, 74%);
+        background-image: url(./bg-intro-mobile\ 1.png);
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        display: block;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .content {
+        width: 375px;
+        padding: 0;
+        display: block;
+        align-items: center;
+        justify-content: center;
+        height: 667px;
+    }
+
+    .left_col {
+        width: 350px;
+        height: 35vh;
+        margin: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .right_col {
+        height: 55vh;
+        width: 350px;
+        margin: auto;
+        padding: 0;
+
+    }
+
+    .form {
+        width: 350px;
+        height: 50vh;
+        margin-left: 0;
+        padding: 18px 0 0 15px;
+    }
+
+    .text {
+        width: 350px;
+    }
+
+    .form .btn {
+        width: 325px;
+
+    }
+
+    h6 {
+        width: 325px;
+        text-align: center;
+    }
+
+    .left_col h1 {
+        margin-top: 0;
+    }
+
+    .form-control input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+        width: 325px;
+        padding: 5px 0 5px 5px;
+        margin: 0 0 10px 0;
+
+    }
+
+    .form-control {
+        height: 30px;
+    }
+
+    .form-control img {
+        bottom: 150px;
+    }
+}
